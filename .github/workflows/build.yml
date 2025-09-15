@@ -1,0 +1,30 @@
+name: Build and Deploy DITA HTML
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install DITA-OT
+        run: |
+          wget https://github.com/dita-ot/dita-ot/releases/download/4.2/dita-ot-4.2.zip
+          unzip dita-ot-4.2.zip
+          mv dita-ot-4.2 dita-ot
+
+      - name: Build HTML5
+        run: |
+          ./dita-ot/bin/dita -i ditamap/dataclean.ditamap -f html5 -o out/html5
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out/html5
