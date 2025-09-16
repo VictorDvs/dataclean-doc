@@ -26,6 +26,10 @@ jobs:
         run: |
           ./dita-ot/bin/dita -i dataclean.ditamap -f html5-bootstrap -o out/html5
 
+      - name: Rename toc.html to index.html
+        run: |
+          mv out/html5/toc.html out/html5/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
