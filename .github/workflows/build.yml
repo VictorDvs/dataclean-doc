@@ -28,11 +28,17 @@ jobs:
           -f html5-bootstrap \
           -o out/html5 \
           -Dargs.output.relative=true \
-          -Dargs.output.html5.bootstrap.base=/dataclean-doc/
 
-      - name: Rename toc.html to index.html
+      - name: Create index.html redirect
         run: |
-          mv out/html5/toc.html out/html5/index.html
+          echo '<!DOCTYPE html>
+          <html>
+            <head>
+              <meta http-equiv="refresh" content="0; url=toc.html">
+            </head>
+            <body>
+            </body>
+          </html>' > out/html5/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
