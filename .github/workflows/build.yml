@@ -24,7 +24,11 @@ jobs:
 
       - name: Build HTML5
         run: |
-          ./dita-ot/bin/dita -i dataclean.ditamap -f html5-bootstrap -o out/html5
+          ./dita-ot/bin/dita -i dataclean.ditamap \
+          -f html5-bootstrap \
+          -o out/html5 \
+          -Dargs.output.relative=true \
+          -Dargs.output.html5.bootstrap.base=/dataclean-doc/
 
       - name: Rename toc.html to index.html
         run: |
