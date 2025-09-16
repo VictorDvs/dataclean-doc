@@ -19,24 +19,8 @@ jobs:
           unzip dita-ot-4.2.zip
           mv dita-ot-4.2 dita-ot
 
-      - name: Download DITA Bootstrap plugin
-        run: |
-          wget https://github.com/jason-fox/dita-bootstrap/archive/refs/heads/develop.zip -O dita-bootstrap.zip
-          unzip dita-bootstrap.zip
-          mv dita-bootstrap-develop dita-bootstrap
-
-      - name: Install Bootstrap plugin if not installed
-        run: |
-          if [ ! -d "./dita-ot/plugins/net.infotexture.dita-bootstrap" ]; then
-            echo "Bootstrap plugin not found, downloading and installing..."
-            wget https://github.com/jason-fox/dita-bootstrap/archive/refs/heads/develop.zip -O dita-bootstrap.zip
-            unzip dita-bootstrap.zip
-            mkdir dita-bootstrap-temp
-            cp -r dita-bootstrap-develop/* dita-bootstrap-temp/
-            ./dita-ot/bin/dita install ./dita-bootstrap-temp
-          else
-            echo "Bootstrap plugin already installed, skipping installation."
-          fi
+      - name: Install Bootstrap plugin
+        run: ./dita-ot/bin/dita install net.infotexture.dita-bootstrap
 
       - name: Build HTML5
         run: |
