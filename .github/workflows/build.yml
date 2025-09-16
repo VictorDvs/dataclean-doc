@@ -34,6 +34,7 @@ jobs:
           -f html5-bootstrap \
           -o out/html5 \
           -Dargs.output.relative=true \
+          -Dargs.bootstrap.theme.css.relative=true
 
       - name: Rename toc.html to index.html
         run: cp out/html5/toc.html out/html5/index.html
