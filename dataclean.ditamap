@@ -3,22 +3,22 @@
 <map>
     <title>Documentation DataClean</title>
     
-    <topicref href="../concepts/about_dataclean.dita"/>
-    <topicref href="../concepts/use_cases.dita"/>
+    <topicref href="concepts/about_dataclean.dita"/>
+    <topicref href="concepts/use_cases.dita"/>
     
     <topichead navtitle="Installation">
-        <topicref href="../tasks/install_windows.dita"/>
-        <topicref href="../tasks/install_linux.dita"/>
+        <topicref href="tasks/install_windows.dita"/>
+        <topicref href="tasks/install_linux.dita"/>
     </topichead>
     
     <topichead navtitle="Utilisation">
-        <topicref href="../tasks/run_command.dita"/>
-        <topicref href="../tasks/export_results.dita"/>
+        <topicref href="tasks/run_command.dita"/>
+        <topicref href="tasks/export_results.dita"/>
     </topichead>
     
     <topichead navtitle="Référence">
-        <topicref href="../references/commands.dita"/>
-        <topicref href="../references/options.dita"/>
-        <topicref href="../references/error_codes.dita"/>
+        <topicref href="references/commands.dita"/>
+        <topicref href="references/options.dita"/>
+        <topicref href="references/error_codes.dita"/>
     </topichead>
 </map>
