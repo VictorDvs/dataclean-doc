@@ -29,13 +29,6 @@ jobs:
           -o out/html5 \
           -Dargs.output.relative=true \
 
-      - name: Copy Bootstrap CSS/JS to root
-        run: |
-          mkdir -p out/html5/style
-          mkdir -p out/html5/script
-          cp -r dita-ot/plugins/net.infotexture.dita-bootstrap/style/* out/html5/style/
-          cp -r dita-ot/plugins/net.infotexture.dita-bootstrap/script/* out/html5/script/
-
       - name: Create index.html redirect
         run: |
           echo '<!DOCTYPE html>
