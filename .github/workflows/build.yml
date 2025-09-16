@@ -33,8 +33,8 @@ jobs:
         run: |
           mkdir -p out/html5/style
           mkdir -p out/html5/script
-          cp -r out/html5/plugins/net.infotexture.dita-bootstrap/style/* out/html5/style/
-          cp -r out/html5/plugins/net.infotexture.dita-bootstrap/script/* out/html5/script/
+          cp -r dita-ot/plugins/net.infotexture.dita-bootstrap/style/* out/html5/style/
+          cp -r dita-ot/plugins/net.infotexture.dita-bootstrap/script/* out/html5/script/
 
       - name: Create index.html redirect
         run: |
