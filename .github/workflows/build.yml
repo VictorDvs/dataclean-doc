@@ -20,7 +20,7 @@ jobs:
           mv dita-ot-4.2 dita-ot
 
       - name: Install Bootstrap plugin
-        run: ./dita-ot/bin/dita install https://github.com/jason-fox/dita-bootstrap/releases/download/5.2.0/dita-bootstrap-5.2.0.zip
+        run: ./dita-ot/bin/dita install https://github.com/jason-fox/dita-bootstrap/releases/download/5.2.0/net.infotexture.dita-bootstrap-5.2.0.zip
 
       - name: Build HTML5
         run: |
