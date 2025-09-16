@@ -13,6 +13,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Install DITA-OT
         run: |
           wget https://github.com/dita-ot/dita-ot/releases/download/4.2/dita-ot-4.2.zip
@@ -29,16 +35,8 @@ jobs:
           -o out/html5 \
           -Dargs.output.relative=true \
 
-      - name: Create index.html redirect
-        run: |
-          echo '<!DOCTYPE html>
-          <html>
-            <head>
-              <meta http-equiv="refresh" content="0; url=toc.html">
-            </head>
-            <body>
-            </body>
-          </html>' > out/html5/index.html
+      - name: Rename toc.html to index.html
+        run: cp out/html5/toc.html out/html5/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
