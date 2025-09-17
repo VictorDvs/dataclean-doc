@@ -41,29 +41,6 @@ jobs:
       - name: Rename toc.html to index.html
         run: cp out/html5/toc.html out/html5/index.html
 
-      - name: Update HTML to use CDN Bootstrap
-        run: |
-          cat <<'EOF' > /tmp/cdn.html
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" crossorigin="anonymous">
-          EOF
-
-          for file in out/html5/*.html; do
-            # Supprime les refs locales
-            sed -i '/common.*\.css/d' "$file"
-            sed -i '/css-theme-switcher/d' "$file"
-            sed -i '/lunr-client/d' "$file"
-
-            # Ajoute les CDN après <head>
-            sed -i '/<head>/r /tmp/cdn.html' "$file"
-          done
-
-          # Patch spécifique pour index.html si besoin
-          if [ -f out/html5/index.html ]; then
-            sed -i '/<head>/r /tmp/cdn.html' out/html5/index.html
-          fi
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
