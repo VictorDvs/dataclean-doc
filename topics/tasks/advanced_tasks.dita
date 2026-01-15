@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="advanced_tasks">
+    <title>Fonctions avancées</title>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Automatisez le nettoyage avec des scripts prédéfinis.</cmd>
+            </step>
+            <step>
+                <cmd>Appliquez des transformations personnalisées sur vos colonnes.</cmd>
+            </step>
+            <step>
+                <cmd>Utilisez la validation pour vérifier la conformité des données avant export.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

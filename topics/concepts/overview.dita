@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="overview">
+    <title>Présentation de DataClean</title>
+    <conbody>
+        <p>DataClean est un outil pour nettoyer, transformer et préparer vos datasets pour l'analyse.</p>
+        <p>Il supporte différents formats de fichiers et propose des fonctions avancées pour automatiser le traitement des données.</p>
+    </conbody>
+</concept>
+

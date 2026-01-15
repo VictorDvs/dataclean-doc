@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="features">
+    <title>Fonctionnalités principales</title>
+    <conbody>
+        <ul>
+            <li>Nettoyage automatique des doublons et valeurs manquantes</li>
+            <li>Transformation des colonnes (format, type, normalisation)</li>
+            <li>Validation des données selon des règles définies</li>
+            <li>Export dans différents formats (CSV, JSON, Excel)</li>
+        </ul>
+    </conbody>
+</concept>

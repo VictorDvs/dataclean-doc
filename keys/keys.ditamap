@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>DataClean Keys</title>
+    
+    <!-- Définition des clés -->
+    <keydef keys="overview" href="../topics/concepts/overview.dita"/>
+    <keydef keys="features" href="../topics/concepts/features.dita"/>
+    <keydef keys="install" href="../topics/tasks/install.dita"/>
+    <keydef keys="run_cleaning" href="../topics/tasks/run_cleaning.dita"/>
+    <keydef keys="advanced_tasks" href="../topics/tasks/advanced_tasks.dita"/>
+    <keydef keys="api_ref" href="../topics/references/api_reference.dita"/>
+    <keydef keys="config_options" href="../topics/references/config_options.dita"/>
+</map>

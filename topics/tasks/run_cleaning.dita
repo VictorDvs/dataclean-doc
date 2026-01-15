@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="run_cleaning">
+    <title>Lancer le nettoyage de données</title>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Ouvrez DataClean et importez votre fichier dataset.</cmd>
+            </step>
+            <step>
+                <cmd>Choisissez les options de nettoyage (doublons, valeurs manquantes).</cmd>
+            </step>
+            <step>
+                <cmd>Lancez le processus de nettoyage et sauvegardez le fichier nettoyé.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

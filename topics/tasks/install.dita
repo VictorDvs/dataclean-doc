@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="install">
+    <title>Installation de DataClean</title>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>Téléchargez DataClean depuis le site officiel.</cmd>
+            </step>
+            <step>
+                <cmd>Exécutez le programme d'installation et suivez les instructions.</cmd>
+            </step>
+            <step>
+                <cmd>Vérifiez l'installation en lançant la commande <ph>dataclean --version</ph>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="config_options">
+    <title>Options de configuration</title>
+    <refbody>
+        <section>
+            <title>Paramètres de configuration</title>
+            <table>
+                <tgroup cols="2">
+                    <thead>
+                        <row>
+                            <entry>Option</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>remove_duplicates</entry>
+                            <entry>Supprime les doublons lors du nettoyage</entry>
+                        </row>
+                        <row>
+                            <entry>normalize_text</entry>
+                            <entry>Normalise les valeurs textuelles</entry>
+                        </row>
+                        <row>
+                            <entry>export_format</entry>
+                            <entry>Format de sortie : CSV, JSON ou Excel</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </refbody>
+</reference>

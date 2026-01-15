@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Documentation utilisateur DataClean</title>
+    
+    <!-- Import des clés -->
+    <mapref href="../keys/keys.ditamap"/>
+    
+    <!-- Organisation de la doc via keyref -->
+    <topicref keyref="overview"/>
+    <topicref keyref="features"/>
+    
+    <topichead navtitle="Guide d’utilisation">
+        <topicref keyref="install"/>
+        <topicref keyref="run_cleaning"/>
+        <topicref keyref="advanced_tasks"/>
+    </topichead>
+    
+    <topichead navtitle="Références techniques">
+        <topicref keyref="api_ref"/>
+        <topicref keyref="config_options"/>
+    </topichead>
+</map>
+

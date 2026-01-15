@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="api_reference">
+    <title>API DataClean</title>
+    <refbody>
+        <section>
+            <title>Fonctions principales</title>
+            <dl>
+                <dlentry>
+                    <dt>clean_data(file_path)</dt>
+                    <dd>Nettoie le fichier donné et retourne un fichier nettoyé.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>transform_column(file_path, column, operation)</dt>
+                    <dd>Applique une transformation à une colonne spécifique.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>validate_data(file_path, rules)</dt>
+                    <dd>Vérifie la conformité des données selon les règles passées en paramètre.</dd>
+                </dlentry>
+            </dl>
+        </section>
+    </refbody>
+</reference>
