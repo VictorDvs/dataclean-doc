@@ -1,0 +1,211 @@
+/* =====================================================
+   Custom styles – DITA HTML (GitHub Pages)
+   Auteur : Victor
+   Objectif : lisibilité, sobriété, sans casser DITA-OT
+   ===================================================== */
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+/* ---------- Layout ---------- */
+
+/* Zone principale de contenu DITA */
+main,
+.body,
+.topic {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;
+}
+
+/* Évite les marges trop serrées sur mobile */
+@media (max-width: 640px) {
+  main,
+  .body,
+  .topic {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* ---------- Titres ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  font-weight: 600;
+  color: #111827;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* ---------- Texte ---------- */
+
+p {
+  margin: 0.75rem 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+/* ---------- Listes ---------- */
+
+ul,
+ol {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+li {
+  margin: 0.25rem 0;
+}
+
+/* ---------- Liens ---------- */
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* ---------- Code ---------- */
+
+pre {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+code {
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Évite le double fond code dans pre */
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* ---------- Tableaux ---------- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* ---------- Images ---------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Notes DITA (note, warning, etc.) ---------- */
+
+.note {
+  border-left: 4px solid #3b82f6;
+  background-color: #eff6ff;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+}
+
+.note .title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- Related links / navigation ---------- */
+
+.related-links {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ---------- Footer (si présent) ---------- */
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* ---------- Divers ---------- */
+
+/* Améliore la lisibilité des citations */
+blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #374151;
+}
